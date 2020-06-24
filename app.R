@@ -16,7 +16,13 @@ ui <- fluidPage(
         sidebarPanel(
             h2("Installation"),
             p("Shiny is available on CRAN, so you can install it in the usual way from your R console:"),
-            code("install.packages(\"shiny\")")
+            code("install.packages(\"shiny\")"),
+            br(),
+            br(),
+            br(),
+            img(src = "rstudio.png", hight = 70, width = 200), # Don't know how the tutorial decided the size.
+            p("Shiny is a product of",
+              a(href = "https://rstudio.com/", "RStudio"))
         ),
         mainPanel(
             h1("Introducing Shiny"), # header
